@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manchester City F.C. | Official Fan Portal</title>
+    <meta name="description" content="Welcome to the official Manchester City fan portal. Experience the trebles, match tickets, official shop, and join the Cityzens community.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://www.mancity.com/favicon.ico">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">CITY</div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+        <nav class="nav-links">
+            <a href="#news">News</a>
+            <a href="#matches">Matches</a>
+            <a href="#players">Players</a>
+            <a href="#tickets">Tickets</a>
+            <a href="#shop">Shop</a>
+            <a href="#join" id="nav-signup-btn-mobile" class="btn-outline mobile-only">Join Cityzens</a>
+        </nav>
+        <a href="#join" id="nav-signup-btn" class="btn-outline desktop-only">Join Cityzens</a>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-bg-accent"></div>
+            <div class="shape circle-outline" style="top: 10%; left: 5%; width: 220px; height: 220px;"></div>
+            <div class="shape dot-solid" style="top: 15%; right: 5%; width: 50px; height: 50px;"></div>
+            <div class="shape square-solid" style="bottom: 20%; right: 10%; width: 120px; height: 120px; opacity: 0.05;"></div>
+            <div class="shape circle-outline" style="bottom: 10%; left: 8%; width: 80px; height: 80px; opacity: 0.08;"></div>
+            
+            <div class="hero-content">
+                <h1>Champions <br><span class="text-sky">Of England</span></h1>
+                <p>Experience the journey of the Treble winners, explore the latest kits, and be part of our global community. The sky is blue.</p>
+                <div class="hero-btns">
+                    <a href="#tickets" class="btn-primary">Get Tickets</a>
+                    <a href="#shop" class="btn-outline">Official Shop</a>
+                </div>
+            </div>
+            
+            <div class="hero-media" id="hero-media-container">
+                <img src="assets/hero_stadium.png" alt="Etihad Stadium at Night - Home of Manchester City">
+            </div>
+        </section>
+
+        <!-- Quote Section -->
+        <section class="testimonial-simple">
+            <div class="container">
+                <h2>"Manchester City is not just a club, it's a family. The connection between the fans and the players is what makes us unstoppable."</h2>
+                <img src="https://images.unsplash.com/photo-1543351611-58f69d7c1781?q=80&w=100" class="avatar-black" alt="Fan portrait representing Cityzens community">
+                <p><strong>Pep Guardiola</strong>, First Team Manager</p>
+            </div>
+        </section>
+
+        <!-- Highlights Section (Dark Split) -->
+        <section class="feature-split-black bg-dark">
+            <div class="container split-container">
+                <div class="split-content text-white">
+                    <h2 style="color: var(--mcfc-sky-blue);">The Historic Treble.</h2>
+                    <p>Relive the incredible moments of the 2022/23 season where we conquered England and Europe. From Istanbul to Manchester, the sky was truly blue.</p>
+                    <div class="author-info">
+                        <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100" class="avatar-white" alt="Erling Haaland placeholder">
+                        <span>Relive the Magic &rsaquo;</span>
+                    </div>
+                </div>
+                <div class="split-media relative" id="split-media-dark">
+                    <img src="assets/highlights.png" alt="Manchester City players celebrating historic goal" class="card-overlap card-back">
+                    <img src="assets/hero_stadium.png" alt="Champions League Trophy celebration" class="card-overlap card-front">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid Section -->
+        <section class="features-grid-section bg-light" id="tickets">
+            <div class="container text-center mb-40">
+                <h2>Explore the Etihad.</h2>
+                <p>Buy match tickets, book stadium tours, or shop the latest PUMA collection. Everything you need as a true City fan.</p>
+            </div>
+            <div class="container grid-4">
+                <!-- Card 1 -->
+                <div class="feature-card">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=400" alt="Official Match Tickets">
+                    </div>
+                    <div class="card-text">
+                        <h3>Match Tickets</h3>
+                        <p style="font-size: 14px; margin-bottom: 20px;">Secure your seat at the Etihad Stadium for upcoming Premier League fixtures.</p>
+                        <a href="#" class="link-more">View Availability &rsaquo;</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="feature-card">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=400" alt="Man City Official Kit">
+                    </div>
+                    <div class="card-text">
+                        <h3>Official Shop</h3>
+                        <p style="font-size: 14px; margin-bottom: 20px;">Get the new 2024/25 Home, Away, and Third kits by PUMA.</p>
+                        <a href="#" class="link-more">Order Now &rsaquo;</a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="feature-card">
+                    <div class="card-media">
+                        <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?q=80&w=400" alt="Cityzens Membership">
+                    </div>
+                    <div class="card-text">
+                        <h3>Cityzens</h3>
+                        <p style="font-size: 14px; margin-bottom: 20px;">Join our official fan membership for exclusive content and rewards.</p>
+                        <a href="#" class="link-more">Join the Family &rsaquo;</a>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="feature-card">
+                    <div class="card-media">
+                        <img src="assets/stadium_tour.png" alt="Etihad Stadium Tour Tunnel Entrance">
+                    </div>
+                    <div class="card-text">
+                        <h3>Stadium Tours</h3>
+                        <p style="font-size: 14px; margin-bottom: 20px;">Go behind the scenes and walk out of the tunnel at the Etihad.</p>
+                        <a href="#" class="link-more">Book a Tour &rsaquo;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mobile App Section -->
+        <section class="feature-split-light bg-light" id="app">
+            <div class="container split-container" style="padding-top: 50px;">
+                <div class="split-media media-left">
+                    <div class="large-black-square">
+                        <img src="assets/mcfc_app.png" alt="Official Manchester City Mobile App Interface">
+                    </div>
+                </div>
+                <div class="split-content pl-40">
+                    <h2>Best Matchday <br>Experience.</h2>
+                    <p>Download the official Manchester City app for live match updates, exclusive behind-the-scenes videos, and Pitcam highlights. Never miss a moment wherever you are.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <button class="btn-primary">App Store</button>
+                        <button class="btn-outline">Google Play</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Join Section -->
+        <section class="free-trial-section text-center" id="join">
+            <div class="container">
+                <h3>Be Part of the Blue Moon.</h3>
+                <p style="margin-bottom: 30px;">Sign up to our newsletter and get first access to tickets, kit drops, and club news.</p>
+                <form action="#" class="trial-form">
+                    <input type="email" id="trial-email" placeholder="Your Email Address" required>
+                    <input type="password" id="trial-password" placeholder="Create a Cityzens Password" required>
+                    <button type="submit" id="trial-submit-btn" class="btn-primary w-100">Create Free Account</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Brand -->
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">CITY</div>
+                    <p>The official digital home of Manchester City F.C. Keep up to date with the latest news, fixtures, and more from the heart of the Etihad.</p>
+                    <div class="footer-socials">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">X</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">YT</a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Explore -->
+                <div class="footer-col">
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#matches">Fixtures</a></li>
+                        <li><a href="#players">Squad</a></li>
+                        <li><a href="#tickets">Tickets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Fan Zone -->
+                <div class="footer-col">
+                    <h3>Fan Zone</h3>
+                    <ul class="footer-links">
+                        <li><a href="#join">Cityzens</a></li>
+                        <li><a href="#shop">Official Shop</a></li>
+                        <li><a href="#app">Mobile App</a></li>
+                        <li><a href="#tours">Stadium Tours</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Support -->
+                <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Use</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <hr class="footer-divider">
+                <div class="footer-bottom-flex">
+                    <p>&copy; 2026 Manchester City FC. All Rights Reserved.</p>
+                    <div class="footer-legal">
+                        <a href="#">Cookies</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">Gender Pay Gap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
