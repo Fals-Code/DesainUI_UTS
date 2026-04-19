@@ -44,27 +44,16 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // 3. Navbar background change on scroll
+    // 3. Navbar appearance on scroll
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-            navbar.style.boxShadow = '0 5px 20px rgba(0,0,0,0.1)';
+        if (window.scrollY > 40) {
+            navbar.classList.add('scrolled');
         } else {
-            navbar.style.background = 'rgba(255, 255, 255, 0.8)';
-            navbar.style.boxShadow = 'none';
+            navbar.classList.remove('scrolled');
         }
     });
 
-    // 4. Hero Pan Effect
-    const heroMedia = document.querySelector('.hero-media img');
-    if (heroMedia) {
-        window.addEventListener('mousemove', (e) => {
-            const x = (window.innerWidth / 2 - e.pageX) / 50;
-            const y = (window.innerHeight / 2 - e.pageY) / 50;
-            heroMedia.style.transform = `scale(1.05) translate(${x}px, ${y}px)`;
-        });
-    }
 
     // 5. Form Logic (Simple Alert)
     const trialForm = document.querySelector('.trial-form');
