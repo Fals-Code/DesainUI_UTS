@@ -238,6 +238,18 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     box-shadow: 0 10px 20px rgba(108, 171, 221, 0.2);
 }
 
+/* Fix for mobile menu signup button */
+.nav-links .btn-signup {
+    color: var(--white) !important;
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+}
+
+.nav-links .btn-signup::after {
+    display: none !important;
+}
+
 /* Hamburger Logic */
 .nav-toggle { display: none; }
 .nav-toggle-label {

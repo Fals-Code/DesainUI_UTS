@@ -13,6 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         top: targetElement.offsetTop - 80,
                         behavior: 'smooth'
                     });
+                    
+                    // Auto-close mobile menu
+                    const navToggle = document.getElementById('nav-toggle');
+                    if (navToggle) navToggle.checked = false;
                 }
             }
         });
