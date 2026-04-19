@@ -44,14 +44,41 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // 3. Navbar appearance on scroll
+   // - [x] Implement Navbar Scroll Interaction & Scroll Spy in main.js
+   // - [/] Enhance Navbar Glassmorphism & Scrolled styles in style.css
+   // - [/] Align index.html Section IDs with Navigation hrefs
+   // - [/] Style the Active link state for Scroll Spy
+   // - [ ] Final verification of mobile-desktop continuity
+
+    // 3. Navbar appearance on scroll & Scroll Spy
     const navbar = document.querySelector('.navbar');
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a');
+
     window.addEventListener('scroll', () => {
+        // Sticky class
         if (window.scrollY > 40) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
+
+        // Scroll Spy
+        let current = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 150) {
+                current = section.getAttribute("id");
+            }
+        });
+
+        navItems.forEach((li) => {
+            li.classList.remove("active");
+            const href = li.getAttribute("href");
+            if (href && href.includes(current) && current !== "") {
+                li.classList.add("active");
+            }
+        });
     });
 
 
