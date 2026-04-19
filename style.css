@@ -13,9 +13,6 @@
     --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
-/* =========================================
-   RESET & GLOBAL
-   ========================================= */
 * {
     margin: 0;
     padding: 0;
@@ -24,7 +21,7 @@
 }
 
 html, body {
-    overflow-x: clip; /* Fix: 'clip' allows sticky to work unlike 'hidden' in some browsers */
+    overflow-x: clip;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -60,9 +57,6 @@ h1, h2, h3, .logo {
     padding: 0 5%;
 }
 
-/* =========================================
-   TYPOGRAPHY & BUTTONS
-   ========================================= */
 h1 { 
     font-size: clamp(40px, 8vw, 72px); 
     font-weight: 800; 
@@ -125,14 +119,11 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     color: var(--white);
 }
 
-/* =========================================
-   NAVBAR & MOBILE MENU
-   ========================================= */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 5%; /* Thicker initially */
+    padding: 20px 5%;
     background: transparent;
     backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(0px);
@@ -238,7 +229,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     box-shadow: 0 10px 20px rgba(108, 171, 221, 0.2);
 }
 
-/* Fix for mobile menu signup button */
 .nav-links .btn-signup {
     color: var(--white) !important;
     text-align: center;
@@ -250,7 +240,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     display: none !important;
 }
 
-/* Hamburger Logic */
 .nav-toggle { display: none; }
 .nav-toggle-label {
     display: none;
@@ -286,9 +275,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     .mobile-only { display: inline-block !important; }
 }
 
-/* =========================================
-   HERO SECTION
-   ========================================= */
 .hero {
     min-height: 100vh;
     display: flex;
@@ -344,7 +330,7 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
 .hero-media {
     width: 100%;
     max-width: 1000px;
-    height: 35vh; /* Capped for "Fit" */
+    height: 35vh;
     z-index: 15;
     position: relative;
     border-radius: 30px;
@@ -352,7 +338,7 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     box-shadow: 0 40px 80px rgba(0,0,0,0.2);
     transition: var(--transition-smooth);
     margin-top: 0;
-    margin-bottom: -100px; /* Flowing into next section */
+    margin-bottom: -100px;
 }
 
 .hero-media img {
@@ -414,9 +400,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* =========================================
-   TESTIMONIAL
-   ========================================= */
 .testimonial-simple {
     text-align: center;
     padding: 160px 5% 100px;
@@ -443,9 +426,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     border: 3px solid var(--mcfc-sky-blue);
 }
 
-/* =========================================
-   FEATURE SPLIT
-   ========================================= */
 .split-container {
     display: flex; 
     align-items: center; 
@@ -478,9 +458,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     border: 5px solid var(--mcfc-obsidian);
 }
 
-/* =========================================
-   FEATURES GRID
-   ========================================= */
 .features-grid-section { padding: 120px 0; position: relative; overflow: hidden; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
 
@@ -527,9 +504,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
 }
 .link-more:hover { border-bottom-color: var(--mcfc-sky-blue); }
 
-/* =========================================
-   MOBILE APP SECTION
-   ========================================= */
 .large-black-square {
     width: 100%;
     border-radius: 30px;
@@ -544,9 +518,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     border-radius: 20px;
 }
 
-/* =========================================
-   FORM SECTION
-   ========================================= */
 .free-trial-section { 
     padding: 120px 0; 
     background-color: var(--light-gray); 
@@ -577,9 +548,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     box-shadow: 0 4px 15px rgba(108, 171, 221, 0.2);
 }
 
-/* =========================================
-   FOOTER
-   ========================================= */
 .footer {
     padding: 100px 0 50px;
     background-color: var(--mcfc-navy);
@@ -700,9 +668,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     color: var(--white);
 }
 
-/* =========================================
-   SHAPES (Sky Blue Accents)
-   ========================================= */
 :root {
     --shape-primary: var(--mcfc-sky-blue);
     --shape-secondary: var(--mcfc-obsidian);
@@ -768,9 +733,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* =========================================
-   RESPONSIVE
-   ========================================= */
 @media screen and (max-width: 992px) {
     .navbar {
         justify-content: space-between;
@@ -798,7 +760,7 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     }
 
     .nav-toggle:checked ~ .nav-actions .nav-links {
-        display: flex; /* Show as flex when checked */
+        display: flex;
         right: 0;
     }
 
@@ -824,7 +786,7 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
 @media screen and (max-width: 768px) {
     .navbar { 
         padding: 15px 5%; 
-        flex-direction: row; /* Fix misalignment */
+        flex-direction: row;
         justify-content: space-between;
     }
     .logo-brand img { height: 36px; }
@@ -848,7 +810,6 @@ p { font-size: 18px; opacity: 0.9; margin-bottom: 25px; }
     .footer-bottom-flex { justify-content: center; text-align: center; }
     .footer-legal { flex-direction: column; align-items: center; gap: 15px; }
     
-    /* Hide non-blur shapes on small screens to reduce clutter */
     .shape:not(.shape-blur) { display: none !important; }
     .shape-blur { transform: scale(0.6); }
 }

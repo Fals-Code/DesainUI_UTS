@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Smooth Scroll for Navigation
     const navLinks = document.querySelectorAll('.nav-links a, .btn-primary, .btn-outline, .footer-links a');
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
@@ -14,7 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
                         behavior: 'smooth'
                     });
                     
-                    // Auto-close mobile menu
                     const navToggle = document.getElementById('nav-toggle');
                     if (navToggle) navToggle.checked = false;
                 }
@@ -22,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // 2. Reveal Animations on Scroll
     const revealElements = document.querySelectorAll('.feature-card, .split-content, .hero-content, .hero-media, .form-container');
     
     const revealCallback = (entries, observer) => {
@@ -48,26 +45,17 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-   // - [x] Implement Navbar Scroll Interaction & Scroll Spy in main.js
-   // - [/] Enhance Navbar Glassmorphism & Scrolled styles in style.css
-   // - [/] Align index.html Section IDs with Navigation hrefs
-   // - [/] Style the Active link state for Scroll Spy
-   // - [ ] Final verification of mobile-desktop continuity
-
-    // 3. Navbar appearance on scroll & Scroll Spy
     const navbar = document.querySelector('.navbar');
     const sections = document.querySelectorAll('section[id]');
     const navItems = document.querySelectorAll('.nav-links a');
 
     window.addEventListener('scroll', () => {
-        // Sticky class
         if (window.scrollY > 40) {
             navbar.classList.add('scrolled');
         } else {
             navbar.classList.remove('scrolled');
         }
 
-        // Scroll Spy
         let current = "";
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
@@ -85,8 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-
-    // 5. Form Logic (Simple Alert)
     const trialForm = document.querySelector('.trial-form');
     if (trialForm) {
         trialForm.addEventListener('submit', (e) => {
